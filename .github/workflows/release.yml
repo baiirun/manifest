@@ -19,6 +19,12 @@ jobs:
                   node-version: 14.x
                   registry-url: 'https://registry.npmjs.org'
 
+            - name: Install deps
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  version: 6.32.3
+                  run_install: true
+
             - name: Tag
               uses: K-Phoen/semver-release-action@master
               with:
