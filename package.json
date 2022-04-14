@@ -31,7 +31,10 @@
     },
     "name": "@guina/manifest",
     "author": "Byron Guina",
-    "module": "dist/manifest.esm.js",
+    "module": "dist/index.js",
+    "publishConfig": {
+        "access": "public"
+    },
     "size-limit": [
         {
             "path": "dist/index.js",
