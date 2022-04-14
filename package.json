@@ -1,21 +1,23 @@
 {
-    "version": "0.1.0",
+    "version": "1.0.0",
     "license": "MIT",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
+    "description": "A lightweight state management library for React using observables.",
     "files": [
         "dist",
         "src"
     ],
     "engines": {
-        "node": ">=10"
+        "node": ">=14"
     },
     "scripts": {
         "build": "node ./build.js",
         "generate:types": "tsc",
         "test": "vitest",
         "prepare": "node ./build.js",
-        "size": "size-limit"
+        "size": "size-limit",
+        "publish": "np"
     },
     "peerDependencies": {
         "react": ">=16.8.0"
@@ -27,7 +29,7 @@
         "trailingComma": "es5",
         "tabWidth": 4
     },
-    "name": "manifest",
+    "name": "@guina/manifest",
     "author": "Byron Guina",
     "module": "dist/manifest.esm.js",
     "size-limit": [
@@ -53,6 +55,7 @@
         "tslib": "^2.3.1",
         "typescript": "^4.6.3",
         "vite": "^2.9.4",
-        "vitest": "^0.9.3"
+        "vitest": "^0.9.3",
+        "np": "^7.6.1"
     }
 }
