@@ -20,6 +20,9 @@ specifiers:
   vite: ^2.9.4
   vitest: ^0.9.3
 
+dependencies:
+  rxjs: 7.5.5
+
 devDependencies:
   '@size-limit/preset-small-lib': 7.0.8_size-limit@7.0.8
   '@testing-library/jest-dom': 5.16.4
@@ -33,7 +36,6 @@ devDependencies:
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
   rollup-plugin-analyzer: 4.0.0
-  rxjs: 7.5.5
   size-limit: 7.0.8
   tslib: 2.3.1
   typescript: 4.6.3
@@ -1584,7 +1586,7 @@ packages:
     resolution: {integrity: sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==}
     dependencies:
       tslib: 2.3.1
-    dev: true
+    dev: false
 
   /safe-buffer/5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}
@@ -1756,7 +1758,6 @@ packages:
 
   /tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
-    dev: true
 
   /type-detect/4.0.8:
     resolution: {integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==}
