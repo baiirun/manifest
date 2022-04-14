@@ -14,7 +14,8 @@
     "scripts": {
         "build": "node ./build.js",
         "generate:types": "tsc",
-        "test": "vitest",
+        "test": "vitest run",
+        "test:watch": "vitest watch",
         "prepare": "node ./build.js",
         "size": "size-limit",
         "publish": "np --access public"
