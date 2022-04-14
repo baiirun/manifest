@@ -21,7 +21,7 @@
         "publish": "np --access public"
     },
     "peerDependencies": {
-        "react": ">=16.8.0"
+        "react": ">=16.8.0 || 17 || 18"
     },
     "prettier": {
         "printWidth": 120,
