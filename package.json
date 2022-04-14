@@ -1,7 +1,8 @@
 {
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "MIT",
     "main": "dist/index.js",
+    "module": "dist/index.js",
     "typings": "dist/index.d.ts",
     "description": "A lightweight state management library for React using observables.",
     "files": [
@@ -32,7 +33,6 @@
     },
     "name": "@guina/manifest",
     "author": "Byron Guina",
-    "module": "dist/index.js",
     "publishConfig": {
         "access": "public"
     },
@@ -50,6 +50,7 @@
         "@types/react-dom": "^18.0.0",
         "@vitejs/plugin-react": "^1.3.1",
         "esbuild": "^0.14.36",
+        "esbuild-node-externals": "^1.4.1",
         "happy-dom": "^2.55.0",
         "react": "^18.0.0",
         "react-dom": "^18.0.0",

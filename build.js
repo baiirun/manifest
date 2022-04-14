@@ -1,4 +1,5 @@
 const esbuild = require('esbuild')
+const { nodeExternalsPlugin } = require('esbuild-node-externals')
 
 esbuild
     .build({
@@ -10,5 +11,6 @@ esbuild
         splitting: true,
         format: 'esm',
         target: ['esnext'],
+        plugins: [nodeExternalsPlugin()],
     })
     .catch(() => process.exit(1))
