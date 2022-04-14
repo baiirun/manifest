@@ -1,0 +1,31 @@
+name: Release
+
+on:
+    pull_request:
+        types: [closed]
+
+jobs:
+    release:
+        name: Release
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Setup Node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 14.x
+                  registry-url: 'https://registry.npmjs.org'
+
+            - name: Tag
+              uses: K-Phoen/semver-release-action@master
+              with:
+                  release_branch: main
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - run: npm publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
