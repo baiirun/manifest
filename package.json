@@ -17,7 +17,7 @@
         "test": "vitest",
         "prepare": "node ./build.js",
         "size": "size-limit",
-        "publish": "np"
+        "publish": "np --access public"
     },
     "peerDependencies": {
         "react": ">=16.8.0"
